@@ -8,32 +8,22 @@
     <title>Erismar Oliveira</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-        </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-        </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-        </script>
-
-    <script src="https://kit.fontawesome.com/f0e17cbf2f.js" crossorigin="anonymous"></script>
+    <link data-n-head="ssr" rel="icon" type="image/x-icon" href="images/logo.png">
     <style>
         p {
             font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
         }
 
         .foto-perfil {
-            height: 100%;
-            width: 30%;
-            max-width: 1080px;
-            border-radius: 50%;
+            height: 260px; 
+            width: 260px;
+            box-shadow: 0px 0px 10px #888; 
+            border-radius: 100px 100px 100px 100px;
         }
 
         .foto-tecnologia {
             height: 100%;
-            width: 30%;
+            width: 40%;
             max-width: 1080px;
         }
 
@@ -56,7 +46,7 @@
             padding-bottom: 20px;
             text-transform: uppercase;
             font-weight: 700;
-            color: #27408B;
+            color: #141F36;
         }
 
         .paragrafoBrancos {
@@ -76,8 +66,16 @@
             color: black !important;
         }
 
+        i {
+            color: #FFC75E;
+        }
+
+        .lead.paragrafoBrancos {
+            text-align: center;
+        }
+
         .corPrimaria {
-            background-color: #1E90FF;
+            background-color: #141F36;
         }
 
         .itemMenu {
@@ -85,7 +83,7 @@
         }
 
         #fundo {
-            background-image: url(images/bg.png);
+            background-color: #141F36;
             
         }
 
@@ -93,6 +91,13 @@
             width: 60px;
         }
 
+        #iconsprog {
+            background-color: #FFC75E;
+        }
+
+        #botao {
+            background-color: #FFC75E;
+        }
     </style>
 </head>
 
@@ -129,22 +134,26 @@
 
     <section class="jumbotron text-center" id="fundo">
         <div class="container">
-            <img src="images/perfil.png" class="foto-perfil" alt="Responsive image">
+            <img src="images/foto-perfil.jpg" class="foto-perfil" alt="Responsive image"><br><br>
             <h1 class="jumbotron-heading" style="color:white;text-transform: uppercase;">Erismar Oliveira</h1>
-            <p class="lead" style="color:white !important;">Desenvolvedor Web - Back-end - Front-end
+            <p class="lead" style="color:white !important;">Desenvolvedor Web - Back-end
             </p>
             <p>
-                <a href="#contato" class="btn btn-warning btn-lg">Contato</a>
+                <a href="#contato" class="btn btn-light btn-lg" id="botao">Contato</a>
             </p>
-            <a href="https://github.com/erismaroliveira" style="color: white;"><i style="color:white" class="fab fa-github"></i> Github</a>
-            <a href="https://www.linkedin.com/in/erismar-oliveirapro" style="color: white;"><i style="color:white" class="fab fa-linkedin"></i> Linkedin</a>
-            <a href="https://www.instagram.com/erismardev" style="color: white;"><i style="color:white" class="fab fa-instagram"></i> Instagram</a>
+            <a href="https://github.com/erismaroliveira" style="color: white;"><i style="color:white" class="fab fa-github"></i> Github</a>&nbsp;
+            <a href="https://www.linkedin.com/in/erismar-oliveirapro" style="color: white;"><i style="color:white" class="fab fa-linkedin"></i> Linkedin</a>&nbsp;
+            <a href="https://www.instagram.com/erismaroliveirapro" style="color: white;"><i style="color:white" class="fab fa-instagram"></i> Instagram</a>
         </div>
     </section>
 
-    <section class="jumbotron text-center bg-light">
-        <div>
-        <img src="images/iconsprog.png" class="foto-tecnologia" alt="Responsive image">
+    <section class="jumbotron text-center" id="iconsprog">
+        <div class="container" style="margin-top: 0%; margin-bottom: -10%;">
+        <img src="images/html.svg" style="width: 100px;" class="foto-tecnologia" alt="Responsive image">&nbsp;
+        <img src="images/caveira-css.svg" style="width: 100px;" class="foto-tecnologia" alt="Responsive image">&nbsp;
+        <img src="images/javascript.svg" style="width: 100px;" class="foto-tecnologia" alt="Responsive image">&nbsp;
+        <img src="images/typescript.svg" style="width: 100px;" class="foto-tecnologia" alt="Responsive image">&nbsp;
+        <img src="images/comp-adonis.svg" style="width: 100px;" class="foto-tecnologia" alt="Responsive image">&nbsp;
         </div>
     </section>
     <!-- Projects -->
@@ -159,19 +168,19 @@
                             alt="Thumbnail [100%x225]" src="images/project1.png" data-holder-rendered="true"
                             style="height: 225px; width: 100%;max-width: 100%; display: block;">
                         <div class="card-body">
-                            <p class="card-text">Esse é um projeto que eu desenvolvi usando as tecnologias PHP, HTML, CSS(bootstrap) e JAVASCRIPT.
+                            <p class="card-text">Esse é um projeto que eu desenvolvi usando as tecnologias JAVASCRIPT, NODEJS, REACTJS e EXPRESS.
                             </p>
                             <ul>
-                                <li>PHP</li>
-                                <li>MYSQL</li>
-                                <li>JAVASCRIPT</li>
-                                <li>HTML</li>
-                                <li>BOOTSTRAP</li>
-                                <li>API</li>
+                                <li>NODEJS</li>
+                                <li>MONGODB</li>
+                                <li>EXPRESS</li>
+                                <li>REACTJS</li>
+                                <li>REDUX</li>
+                                <li>API (pagseguro)</li>
                             </ul>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-success">Ver Projeto</button>
+                                    <a href="https://lojait.com.br/"><button type="button" class="btn btn-sm btn-outline-success">Ver Projeto</button></a>
                                 </div>
                                 <small class="text-muted">Projeto Web</small>
                             </div>
@@ -211,10 +220,23 @@
     <section class="jumbotron text-center corPrimaria" id="sobre-mim">
         <div class="container">
             <h2 class="jumbotron-heading titulosBrancos">Sobre mim</h2>
-            <p class="lead paragrafoBrancos">Olá meu nome é Erismar Oliveira e estou no mercado de    programação web há mais de 3 anos, tendo
-                desenvolvido projetos com empresas como Info Tech entre diversas outras. Sou
-                apaixonado por tecnologias e desenvolvimento, e gosto de compartilhar meu conhecimento sempre que possível
-                com meus colegas de trabalho.</p>
+        </div>
+        <div class="container">
+            <p class="lead paragrafoBrancos">
+                <b style="color: #FFC75E">Linguagens:</b> Javascript, PHP, Python, C.<br/>
+            </p>
+            <p class="lead paragrafoBrancos" style="text-align: center;">
+                <b style="color: #FFC75E;">Frameworks:</b> Node JS, Laravel, React, Bootstrap.<br/>
+            </p>
+            <p class="lead paragrafoBrancos">
+                <b style="color: #FFC75E;">Ferramentas:</b> MySQL Workbench, Git, Docker.<br/>
+            </p>
+            <p class="lead paragrafoBrancos">
+                <b style="color: #FFC75E;">Jornada do Editor:</b> VS Code, Sublime, Netbeans.<br/>
+            </p>
+            <p class="lead paragrafoBrancos">
+                <b style="color: #FFC75E;">Sistema Operacional:</b> Ubuntu, Linux, Windows.<br/>
+            </p>
         </div>
     </section>
 
@@ -222,14 +244,14 @@
         <div class="album py-5 bg-light">
             <div class="container">
                 <h2 class="text-center jumbotron-heading titulosAzul">Depoimentos</h2>
-                <blockquote class="blockquote text-center">
-                    <p class="mb-0">É um profissional com um foco enorme em suas tarefas diárias, alem da
+                <blockquote class="blockquote quote text-center">
+                    <p class="mb-0"><i class="fa fa-quote-left"></i> É um profissional com um foco enorme em suas tarefas diárias, além da
                         simples dedicação do dia-a-dia na empresa.</p>
                     <footer class="blockquote-footer">CEO<cite title="Source Title"> Info Tech</cite>
                     </footer>
                 </blockquote>
                 <blockquote class="blockquote text-center">
-                    <p class="mb-0">Um profissional super focado, dedicado, pontual com seus compromissos e ético.
+                    <p class="mb-0"><i class="fa fa-quote-left"></i> Um profissional super focado, dedicado, pontual com seus compromissos e ético.
                         Interessado e super empolgado na área em que atua e nas demais, o que o torna um profissional
                         pró-ativo e altamente eficiente.</p>
                     <footer class="blockquote-footer">Analista de Sistemas <cite title="Source Title">Flávio Gomes</cite>
@@ -244,7 +266,7 @@
             <div class="container-fluid">
                 <h3 style="padding-top:90px;" class="text-center titulosBrancos">Disponível para oportunidades</h3>
                 <h4 style="padding-bottom:90px;margin-bottom: 0px;color:white;" class="text-center"><a
-                        href="mailto:erismarpro@hotmail.com" style="color: #27408B;">erismarpro@hotmail.com👈</a></h4>
+                        href="mailto:erismarpro@hotmail.com" style="color: #3DA866;">erismarpro@hotmail.com👈</a></h4>
             </div>
         </div>
     </section>
@@ -255,7 +277,17 @@
         </p>
     </footer>
     
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+        </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+        </script>
 
+    <script src="https://kit.fontawesome.com/f0e17cbf2f.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
