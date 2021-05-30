@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Erismar Oliveira</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link data-n-head="ssr" rel="icon" type="image/x-icon" href="images/logo.png">
+    <link data-n-head="ssr" rel="icon" type="image/x-icon" href="images/logo-art.png">
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
         p {
+            color: black !important;
             font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+
+        i {
+            color: #FFC75E;
         }
 
         .foto-perfil {
@@ -25,10 +34,6 @@
             height: 100%;
             width: 40%;
             max-width: 1080px;
-        }
-
-        .icones {
-            padding-left: 5px;
         }
 
         .titulosBrancos {
@@ -58,18 +63,6 @@
             margin-bottom: 0px;
         }
 
-        html {
-            scroll-behavior: smooth;
-        }
-
-        p {
-            color: black !important;
-        }
-
-        i {
-            color: #FFC75E;
-        }
-
         .lead.paragrafoBrancos {
             text-align: center;
         }
@@ -88,10 +81,6 @@
             border-radius: inherit;
         }
 
-        #logo {
-            width: 60px;
-        }
-
         #iconsprog {
             background-color: #FFC75E;
             border-radius: inherit;
@@ -102,43 +91,29 @@
         }
     </style>
 </head>
-
 <body>
-    <nav class="navbar navbar-expand-md navbar-light" style="background-color: #27408B">
-        <a class="navbar-brand" href="#" style=color:white>
-        <img src="images/logo.png" alt="logo" id="logo"> Erismar Oliveira
+    <header id="header">
+        <a id="logo" href="">
+            <img src="images/logo-art.png" alt="logo" id="logo">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04"
-            aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarsExample04">
-            <ul class="navbar-nav mr-auto">
-
-            </ul>
-            <ul class="navbar-nav">
-                <li>
-                    <a href="#projetos" class="nav-link" style=color:white> Projetos</a>
-                </li>
-                <li>
-                    <a href="#sobre-mim" class="nav-link" style=color:white>Sobre mim</a>
-                </li>
-                <li>
-                    <a href="#depoimentos" class="nav-link" style=color:white>Depoimentos</a>
-                </li>
-                <li>
-                    <a href="#contato" class="nav-link" style=color:white>Contato</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+        <nav id="nav">
+          <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+            <span id="hamburger"></span>
+          </button>
+          <ul id="menu" role="menu">
+            <li><a href="#projetos"><i class="fas fa-file-code"></i> Projetos</a></li>
+            <li><a href="#sobre-mim"><i class="fas fa-users"></i> Sobre mim</a></li>
+            <li><a href="#depoimentos"><i class="fas fa-laptop-code"></i> Depoimentos</a></li>
+            <li><a href="#contato"><i class="fas fa-envelope"></i> Contato</a></li>
+          </ul>
+        </nav>
+    </header>
 
     <section class="jumbotron text-center" id="fundo">
         <div class="container">
             <img src="images/foto-perfil.jpg" class="foto-perfil" alt="Responsive image"><br><br>
             <h1 class="jumbotron-heading" style="color:white;text-transform: uppercase;">Erismar Oliveira</h1>
-            <p class="lead" style="color:white !important;">Web developer - mobile
+            <p class="lead" style="color:white !important;">Web Developer - Mobile
             </p>
             <p>
                 <a href="#contato" class="btn btn-light btn-lg" id="botao">Contato</a>
@@ -149,15 +124,7 @@
         </div>
     </section>
 
-    <section class="jumbotron text-center" id="iconsprog">
-        <div class="container" style="margin-top: 0%; margin-bottom: -10%;">
-        <img src="images/html.svg" style="width: 100px;" class="foto-tecnologia" alt="Responsive image">&nbsp;
-        <img src="images/caveira-css.svg" style="width: 100px;" class="foto-tecnologia" alt="Responsive image">&nbsp;
-        <img src="images/javascript.svg" style="width: 100px;" class="foto-tecnologia" alt="Responsive image">&nbsp;
-        <img src="images/typescript.svg" style="width: 100px;" class="foto-tecnologia" alt="Responsive image">&nbsp;
-        <img src="images/comp-adonis.svg" style="width: 100px;" class="foto-tecnologia" alt="Responsive image">&nbsp;
-        </div>
-    </section>
+    
     <!-- Projects -->
     <div class="album py-5 bg-light " id="projetos">
         <div class="container">
@@ -170,7 +137,8 @@
                             alt="Thumbnail [100%x225]" src="images/project1.png" data-holder-rendered="true"
                             style="height: 225px; width: 100%;max-width: 100%; display: block;">
                         <div class="card-body">
-                            <p class="card-text">Esse é um projeto que eu desenvolvi usando as tecnologias JAVASCRIPT, NODEJS, REACTJS e EXPRESS.
+                            <p class="card-text">
+                                Esse é um projeto que eu desenvolvi usando as seguintes tecnologias:
                             </p>
                             <ul>
                                 <li>NODEJS</li>
@@ -178,7 +146,7 @@
                                 <li>EXPRESS</li>
                                 <li>REACTJS</li>
                                 <li>REDUX</li>
-                                <li>API (pagseguro)</li>
+                                <li>API (PagSeguro)</li>
                             </ul>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
@@ -196,15 +164,16 @@
                             alt="Thumbnail [100%x225]" src="images/project2.png" data-holder-rendered="true"
                             style="height: 225px; width: 100%; display: block;">
                         <div class="card-body">
-                            <p class="card-text">Esse é um projeto que eu desenvolvi usando as tecnologias PHP, HTML, CSS e MYSQL.
+                            <p class="card-text">
+                                Esse é um projeto que eu desenvolvi usando as seguintes tecnologias:
                             </p>
                             <ul>
                                 <li>PHP</li>
                                 <li>MYSQL</li>
                                 <li>HTML</li>
                                 <li>CSS</li>
-                                <br>
-                                <br>
+                                <br/>
+                                <br/>
                             </ul>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
@@ -274,8 +243,8 @@
     </section>
 
     <footer class="text-center" style="background-color:#27408B;padding:0px; margin:0px">
-        <p style="margin:0px;padding-top:15px;padding-bottom:15px;color:white !important">Copyright 2018 - 2021
-            Erismar Oliveira ®
+        <p style="margin:0px;padding-top:15px;padding-bottom:15px;color:white !important">
+            Copyright 2021 Erismar Oliveira ®
         </p>
     </footer>
     
@@ -290,6 +259,7 @@
         </script>
 
     <script src="https://kit.fontawesome.com/f0e17cbf2f.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
