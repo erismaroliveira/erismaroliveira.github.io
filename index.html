@@ -1,285 +1,266 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="author" content="Erismar Oliveira" />
-  <meta name="description" content="Desenvolvedor Front-End" />
-  <meta name="keywords" content="sites, web, desenvolvimento, programador, erismardev, front-end, freelancer, freela, website" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#6610F2" />
-  <meta name="copyright" content="erismardev 2021" />
-  <meta http-equiv="content-language" content="pt-br" />
-  <meta property="og:title" content="Portfólio | Erismar Oliveira - Desenvolvedor Front-End" />
-  <meta property="og:description" content="Desenvolvedor Front-End" />
-  <title>Portfólio | Erismar Oliveira - Desenvolvedor Front-End</title>
-  <link rel="stylesheet" href="assets/scss/style.css" />
-  <link rel="shortcut icon" href="assets/image/erismardev.png" type="image/x-icon" />
-  <link rel="apple-touch-icon" href="assets/image/erismardev.png" />
-  <link rel="canonical" href="https://erismaroliveira.github.io/" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Erismar Oliveira</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link data-n-head="ssr" rel="icon" type="image/x-icon" href="images/logo-art.png">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        p {
+            color: black !important;
+            font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+
+        i {
+            color: #FFC75E;
+        }
+
+        .foto-perfil {
+            height: 260px; 
+            width: 260px;
+            box-shadow: 0px 0px 10px #888; 
+            border-radius: 100px 100px 100px 100px;
+        }
+
+        .foto-tecnologia {
+            height: 100%;
+            width: 40%;
+            max-width: 1080px;
+        }
+
+        .titulosBrancos {
+            text-decoration: underline;
+            text-underline-position: under;
+            padding-bottom: 20px;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: white;
+        }
+
+        .titulosAzul {
+            text-decoration: underline;
+            text-underline-position: under;
+            padding-bottom: 20px;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: #141F36;
+        }
+
+        .paragrafoBrancos {
+            color: white !important;
+        }
+
+
+        .jumbotron {
+            margin-bottom: 0px;
+        }
+
+        .lead.paragrafoBrancos {
+            text-align: center;
+        }
+
+        .corPrimaria {
+            background-color: #141F36;
+            border-radius: inherit;
+        }
+
+        #projetos {
+            margin-top: 5px;
+        }
+
+        #sobre-mim {
+            background-color: #141F36;
+            border-radius: inherit;
+        }
+
+        #iconsprog {
+            background-color: #FFC75E;
+            border-radius: inherit;
+        }
+
+        #botao {
+            background-color: #FFC75E;
+        }
+    </style>
 </head>
-
 <body>
-  <!--Menu-->
-  <header>
-    <div class="larguraMaxContainer">
-      <nav>
-          <h1 class="logo">Portfólio</h1>
-          <div class="mobile-menu">
-              <div class="line1"></div>
-              <div class="line2"></div>
-              <div class="line3"></div>
-          </div>
-          <ul class="nav-list">
-              <li><a href="#sobre">Sobre mim</a></li>
-              <li><a href="#projetos">Projetos</a></li>
-              <li><a href="#servicos">Serviços</a></li>
-              <li><a href="#conhecimentos">Conhecimentos</a></li>
+    <header id="header">
+        <a id="logo" href="">
+            <img src="images/logo-art.png" alt="logo" id="logo">
+        </a>
+        <nav id="nav">
+          <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+            <span id="hamburger"></span>
+          </button>
+          <ul id="menu" role="menu">
+            <li><a href="#projetos"><i class="fas fa-file-code"></i> Projetos</a></li>
+            <li><a href="#sobre-mim"><i class="fas fa-user"></i> Sobre mim</a></li>
+            <li><a href="#habilidades"><i class="fas fa-laptop-code"></i> Habilidades</a></li>
+            <li><a href="#depoimentos"><i class="fas fa-comments"></i> Depoimentos</a></li>
+            <li><a href="#contato"><i class="fas fa-envelope"></i> Contato</a></li>
           </ul>
-      </nav>
+        </nav>
+    </header>
+
+    <section class="jumbotron text-center" id="sobre-mim">
+        <div class="container">
+            <img src="images/foto-perfil.jpg" class="foto-perfil" alt="Responsive image"><br><br>
+            <h1 class="jumbotron-heading" style="color:white;text-transform: uppercase;">Erismar Oliveira</h1>
+            <p class="lead" style="color:white !important;">Web Developer - Mobile
+            </p>
+            <p>
+                <a href="#contato" class="btn btn-light btn-lg" id="botao">Contato</a>
+            </p>
+            <a href="https://github.com/erismaroliveira" style="color: white;"><i style="color:white" class="fab fa-github"></i> Github</a>&nbsp;
+            <a href="https://www.linkedin.com/in/erismar-oliveirapro" style="color: white;"><i style="color:white" class="fab fa-linkedin"></i> Linkedin</a>&nbsp;
+            <a href="https://www.instagram.com/erismardev" style="color: white;"><i style="color:white" class="fab fa-instagram"></i> Instagram</a>
+        </div>
+    </section>
+
+    
+    <!-- Projects -->
+    <div class="album py-5 bg-light " id="projetos">
+        <div class="container">
+            <h2 class="text-center jumbotron-heading titulosAzul">Projetos</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top"
+                            data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                            alt="Thumbnail [100%x225]" src="images/project1.png" data-holder-rendered="true"
+                            style="height: 225px; width: 100%;max-width: 100%; display: block;">
+                        <div class="card-body">
+                            <p class="card-text">
+                                Esse é um projeto que eu desenvolvi usando as seguintes tecnologias:
+                            </p>
+                            <ul>
+                                <li>NODEJS</li>
+                                <li>MONGODB</li>
+                                <li>EXPRESS</li>
+                                <li>REACTJS</li>
+                                <li>REDUX</li>
+                                <li>API (PagSeguro)</li>
+                            </ul>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a href="https://lojait.com.br/"><button type="button" class="btn btn-sm btn-outline-success">Ver Projeto</button></a>
+                                </div>
+                                <small class="text-muted">Projeto Web</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top"
+                            data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                            alt="Thumbnail [100%x225]" src="images/project2.png" data-holder-rendered="true"
+                            style="height: 225px; width: 100%; display: block;">
+                        <div class="card-body">
+                            <p class="card-text">
+                                Esse é um projeto que eu desenvolvi usando as seguintes tecnologias:
+                            </p>
+                            <ul>
+                                <li>PHP</li>
+                                <li>MYSQL</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <br/>
+                                <br/>
+                            </ul>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-success">Ver Projeto</button>
+                                </div>
+                                <small class="text-muted">Projeto Web</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </header>
 
-  <main>
-    <!--Home-->
-    <section id="apresentacaoPortfolio">
-      <div class="larguraMaxContainer">
-        <article id="apresentacaoTexto">
-          <h2 class="imagem-delay">
-            Olá, eu sou o<br>
-            <span id="nome">Erismar Oliveira</span><br>
-            <span class="maquina-escrever">Desenvolvedor Front-End.</span>
-          </h2>
-          <a href="https://www.instagram.com/erismardev/" rel="noopener" target="_blank" class="button">
-            <span class="iconify" data-inline="false" data-icon="bi:instagram"></span>&nbsp;Instagram
-          </a>
-        </article>
-        <article id="apresentacaoFoto">
-          <img src="assets/image/espaco-ux.png" alt="foto de um espaço" id="fundo" class="imagem-espaco-delay">
-          <img src="assets/image/erismar-flutuando.png" alt="personagem flutuando" class="object imagem-erismar-delay" >
-        </article>
-      </div>
-    </section>
-
-    <!--Sobre mim-->
-    <section id="sobre">
-      <div class="larguraMaxContainer">
-        <section id="sobreMim">
-          <article id="sobreFoto">
-            <img src="assets/image/erismardev.png" alt="ilustração do erismar" class="imagem-delay" data-tilt>
-            <div id="figura1" class="icon1 descricao-delay">
-              <span class="iconify" data-inline="false" data-icon="vscode-icons:file-type-html"></span>
-            </div>
-            <div id="figura2" class="icon2 descricao-delay">
-              <span class="iconify" data-inline="false" data-icon="vscode-icons:file-type-js-official"></span>
-            </div>
-            <div id="figura3" class="icon3 descricao-delay">
-              <span class="iconify" data-inline="false" data-icon="vscode-icons:file-type-css"></span>
-            </div>
-          </article>
-          <article id="sobreTexto">
-            <h2 class="titulo-delay">Sobre mim</h2>
-            <p class="descricao-delay">
-              Meu nome é Erismar, tenho 27 anos, moro no Brasil, especificamente em Brasília-DF. Atualmente estou
-              estudando em uma universidade. Também tenho estudado bastante sozinho para aprender
-              novas tecnologias.
+    <section class="jumbotron text-center corPrimaria" id="habilidades">
+        <div class="container">
+            <h2 class="jumbotron-heading titulosBrancos">Habilidades</h2>
+        </div>
+        <div class="container">
+            <p class="lead paragrafoBrancos">
+                <b style="color: #FFC75E">Linguagens:</b> Javascript, Typescript.<br/>
             </p>
-            <p class="descricao-delay">
-              Iniciei como Desenvolvedor Front End em 2019. Desde então venho dedicando cerca de 9hrs por dia aos
-              estudos. Vejo que estou no caminho certo pois, vejo os resultados que as horas dedicadas trazem.
+            <p class="lead paragrafoBrancos" style="text-align: center;">
+                <b style="color: #FFC75E;">Bibliotecas:</b> React, React Native.<br/>
             </p>
-            <div>
-              <a href="https://www.linkedin.com/in/erismar-oliveirapro/" rel="noopener" target="_blank" class="button">
-                <span class="iconify" data-inline="false" data-icon="akar-icons:linkedin-fill"></span>&nbsp;Linkedin
-              </a>
-              <a href="#" rel="noopener" class="button" download="Currículo - Erismar Oliveira (Front-End)">
-                <span class="iconify" data-inline="false" data-icon="ri:download-cloud-fill"></span>&nbsp;Currículo
-              </a>
-            </div>
-          </article>
-        </section>
-      </div>
-    </section>
- 
-    <!--Projetos-->
-    <section id="projetos">
-      <div class="larguraMaxContainer">
-        <h2 class="titulo-delay">Projetos</h2>
-        <article>
-          <div class="cards-interval">
-            <h3>Loja IT</h3>
-            <p>Esse é um projeto que eu desenvolvi usando as seguintes tecnologias:</p>
-            <span>
-              <a href="https://lojait.com.br/" rel="noopener" target="_blank" class="button">
-                <button><span class="iconify" data-inline="false" data-icon="bx:bx-link"></span></i>&nbsp;Website</button>
-              </a>
-            </span>
-            <div class="linguagensProjeto">
-              <span>NODEJS</span>
-              <span>MONGODB</span>
-              <span>EXPRESS</span>
-              <span>REACTJS</span>
-              <span>REDUX</span>
-              <span>API (PagSeguro)</span>
-            </div>
-          </div>
-
-          <div class="cards-interval">
-            <h3>Guia dos Advogados</h3>
-            <p>Esse é um projeto que eu desenvolvi usando as seguintes tecnologias:</p>
-            <span>
-              <a href="#" rel="noopener" target="_blank" class="button">
-                <button><span class="iconify" data-inline="false" data-icon="bx:bx-link"></span></i>&nbsp;Website</button>
-              </a>
-            </span>
-            <div class="linguagensProjeto">
-              <span>PHP</span>
-              <span>MYSQL</span>
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>Bootstrap</span>
-            </div>
-          </div>
-        </article>
-        <a href="https://github.com/erismaroliveira?tab=repositories" rel="noopener" target="_blank" class="descricao-delay">Repositórios no GitHub</a>
-      </div>
-    </section>
-
-    <!--Serviços-->
-    <section id="servicos">
-      <div class="larguraMaxContainer">
-        <h2 class="titulo-delay">Serviços</h2>
-        <article>
-          <div class="cards-interval draw meet">
-            <span class="iconify" data-inline="false" data-icon="clarity:computer-line"></span>
-            <h3>Criação de Sites</h3>
-            <p>Desenvolvimento de sites profissionais, sistemas web, blogs e lojas virtuais.</p>
-          </div>
-          <div class="cards-interval">
-            <span class="iconify" data-inline="false" data-icon="akar-icons:mobile-device"></span>
-            <h3>Sites Responsivos</h3>
-            <p>Criação de sites responsivos para a melhor visualização em todas as resoluções.</p>
-          </div>
-          <div class="cards-interval">
-            <span class="iconify" data-inline="false" data-icon="bi:code-square"></span>
-            <h3>Código Semântico</h3>
-            <p>Estratégia e monitoração para seu negócio, fazendo com que seu site apareça cada vez melhor nas buscas.</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!--Conhecimentos-->
-    <section id="conhecimentos">
-      <div class="larguraMaxContainer">
-        <div>
-          <article id="texto-conhecimentos">
-            <h2 class="titulo-delay">Conhecimentos</h2>
-            <p class="descricao-delay mudarTextoDescricao">
-              Estou convencido de que juntos alcançaremos coisas incríveis.💜
-              <br>
-              <br>
-              *passe o mouse no card para ler sobre*
+            <p class="lead paragrafoBrancos">
+                <b style="color: #FFC75E;">Ferramentas:</b> Git, Node, NPM, Yarn.<br/>
             </p>
-          </article>
-
-          <article id="cards-conhecimentos">
-            <div class="cards-interval html sairCaixa">
-              <span class="cards-nomes">HTML</span>
-              <span class="iconify" data-inline="false" data-icon="icomoon-free:html-five"></span>
-            </div>
-            <div class="cards-interval css sairCaixa">
-              <span class="cards-nomes">CSS</span>
-              <span class="iconify" data-inline="false" data-icon="simple-icons:css3"></span>
-            </div>
-            <div class="cards-interval js sairCaixa">
-              <span class="cards-nomes">Javascript</span>
-              <span class="iconify" data-inline="false" data-icon="cib:js"></span>
-            </div>
-            <div class="cards-interval bootstrap sairCaixa">
-              <span class="cards-nomes">Bootstrap</span>
-              <span class="iconify" data-inline="false" data-icon="mdi:bootstrap"></span>
-            </div>
-            <div class="cards-interval sass sairCaixa">
-              <span class="cards-nomes-baixo">Sass</span>
-              <span class="iconify" data-inline="false" data-icon="cib:sass-alt"></span>
-            </div>
-            <div class="cards-interval react sairCaixa">
-              <span class="cards-nomes-baixo">ReactJS</span>
-              <span class="iconify" data-inline="false" data-icon="cib:react"></span>
-            </div>
-            <div class="cards-interval next sairCaixa">
-              <span class="cards-nomes-baixo">Next.js</span>
-              <span class="iconify" data-inline="false" data-icon="file-icons:nextjs"></span>
-            </div>
-            <div class="cards-interval styled sairCaixa">
-              <span class="cards-nomes-baixo aumento-hover">Styled Components</span>
-              <span class="iconify" data-inline="false" data-icon="simple-icons:styled-components"></span>
-            </div>
-          </article>
-          
+            <p class="lead paragrafoBrancos">
+                <b style="color: #FFC75E;">Jornada do Editor:</b> VS Code, Sublime.<br/>
+            </p>
+            <p class="lead paragrafoBrancos">
+                <b style="color: #FFC75E;">Sistema Operacional:</b> Windows, Linux.<br/>
+            </p>
         </div>
-      </div>
     </section>
 
-    <!---
-    <form id="contato" method="post" enctype="text/plain">
-      <article id="agradecimento">
-        <div>
-          <h2>Obrigado pela visita!</h2>
-          <h4>Não hesite em mandar-me uma mensagem.</h4>
+    <section Id="depoimentos">
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center jumbotron-heading titulosAzul">Depoimentos</h2>
+                <blockquote class="blockquote quote text-center">
+                    <p class="mb-0"><i class="fa fa-quote-left"></i> É um profissional com um foco enorme em suas tarefas diárias, além da
+                        simples dedicação do dia-a-dia na empresa.</p>
+                    <footer class="blockquote-footer">CEO<cite title="Source Title"> Info Tech</cite>
+                    </footer>
+                </blockquote>
+                <blockquote class="blockquote text-center">
+                    <p class="mb-0"><i class="fa fa-quote-left"></i> Um profissional super focado, dedicado, pontual com seus compromissos e ético.
+                        Interessado e super empolgado na área em que atua e nas demais, o que o torna um profissional
+                        pró-ativo e altamente eficiente.</p>
+                    <footer class="blockquote-footer">Analista de Sistemas <cite title="Source Title">Flávio Gomes</cite>
+                    </footer>
+                </blockquote>
+            </div>
         </div>
-      </article>
-      <fieldset id="camposContato">
-        <div id="campoFlex">
-          <div class="campoPadrao">
-            <label>E-mail</label>
-            <input name="email" type="email" class="campos" placeholder="Digite e-mail aqui..." required>
-          </div>
+    </section>
 
-          <div class="campoPadrao" id="espacoResponsivo">
-            <label>Nome</label>
-            <input name="nome" type="text" class="campos" placeholder="Digite seu nome aqui..." required>
-          </div>
+    <section Id="contato" class="corPrimaria">
+        <div class="corPrimaria">
+            <div class="container-fluid">
+                <h3 style="padding-top:90px;" class="text-center titulosBrancos">Disponível para oportunidades</h3>
+                <h4 style="padding-bottom:90px;margin-bottom: 0px;color:white;" class="text-center"><a
+                        href="mailto:erismarpro@hotmail.com" style="color: #3DA866;">erismarpro@hotmail.com👈</a></h4>
+            </div>
         </div>
+    </section>
 
-        <div id="campoDois">
-          <label>Mensagem</label>
-          <textarea name="mensagem" id="campoMensagem" cols="30" rows="10"
-            placeholder="Digite o motivo do contato aqui..." required></textarea>
-        </div>
+    <footer class="text-center" style="background-color:#27408B;padding:0px; margin:0px">
+        <p style="margin:0px;padding-top:15px;padding-bottom:15px;color:white !important">
+            Copyright 2021 Erismar Oliveira ®
+        </p>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+        </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+        </script>
 
-        <input type="submit" value="Enviar" id="botao">
-
-        <div id="captcha">
-          Goo<input type="text" id="campo" maxlength="1" required>le
-        </div>
-      </fieldset>
-    </form>-->
-
-    <!--Scroll top-->
-    <div id="stop" class="scrollTop">
-      <span>
-        <span class="iconify" data-inline="false" data-icon="dashicons:arrow-up-alt2"></span>
-      </span>
-    </div>
-  </main>
-
-  <!--Footer-->
-  <footer class="footer">
-    <p class="titulo-delay">Orgulhosamente feito por Erismar Oliveira</p>
-  
-  </footer>
-
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <!--Script dos ícones-->
-  <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
-  <!--JQuery para o scroll-->
-  <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
-  <!--Scritps-->
-  <script src="assets/js/script.js"></script>
-  <!--Script do efeito de inclinação-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/f0e17cbf2f.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
