@@ -4,6 +4,8 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [ main ]
+permissions:
+  contents: write
 
 jobs:
   deploy-to-github-pages:
@@ -34,6 +36,6 @@ jobs:
     - name: Commit wwwroot to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4
       with:
-          Github Pages - Github Action workflow: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
           FOLDER: release/wwwroot
