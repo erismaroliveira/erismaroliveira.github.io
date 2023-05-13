@@ -7,7 +7,7 @@
   "linkerEnabled": true,
   "resources": {
     "assembly": {
-      "erismaroliveira.dll": "sha256-Y82B3ZkNvn5BvV+5LuORxfs4vV0ZmeN0wdaWofs6J+c=",
+      "erismaroliveira.dll": "sha256-cKxxMeMjUwWryS\/8NJ\/457daVh8qNaZYbocMhtnVHso=",
       "Microsoft.AspNetCore.Components.dll": "sha256-\/+L9Al0JK1KPmniiycHXDPxJ7\/B1eSn+xJWI5UVfWgU=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-laWsDS1wqwzQ0rHqiQVZP7\/oSKHAjnpOoDX45A8TBpY=",
       "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-UWi7YG9kN0ePxQRgpVGQFkleBvJ8e8p8GVxkS0SHit8=",
