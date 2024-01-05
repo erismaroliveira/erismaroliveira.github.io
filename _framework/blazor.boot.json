@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "ErismarOliveira",
   "resources": {
-    "hash": "sha256-BN4u/bXYaO8e+VUjUTFR8/dyOrw3uL/D2f4xgv/HBF0=",
+    "hash": "sha256-NKoLAy6uKftpglOfHG1vvYQVlSqOMe0bj8G7RYsfyy8=",
     "jsModuleNative": {
       "dotnet.native.8.0.0.45ykigla5r.js": "sha256-LjLDIz9+J7uuiwMlQ4HbNx2BnSpphOtO2MwkoI28vdI="
     },
@@ -17,7 +17,7 @@
       "icudt_no_CJK.dat": "sha256-L7sV7NEYP37/Qr2FPCePo5cJqRgTXRwGHuwF5Q+0Nfs="
     },
     "assembly": {
-      "ErismarOliveira.wasm": "sha256-NQc0En4o2g3yg1i9Ami+NA/eD3DcByDUuPFruTodtNs=",
+      "ErismarOliveira.wasm": "sha256-P27VD+uYwR/dpElsZv3yQNRu5w7UvbxV7+xeqhw3Pu0=",
       "Microsoft.AspNetCore.Components.wasm": "sha256-VS0AiSyRt/aiOantX+eu1XIT896oY37PcKt0QzpEb1A=",
       "Microsoft.AspNetCore.Components.Web.wasm": "sha256-ivj7kxN8rrhTm1UV0H7dhsOewu6rhATFU2ZAG/YKLvA=",
       "Microsoft.AspNetCore.Components.WebAssembly.wasm": "sha256-Ws5szf6fWPAXna+XyWsAhavx+WDFcA/91DQ7iPRPCMs=",
