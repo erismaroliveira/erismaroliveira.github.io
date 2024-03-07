@@ -1,0 +1,7 @@
+body {
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100% !important;
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+}
